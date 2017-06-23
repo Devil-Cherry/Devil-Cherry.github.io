@@ -1,0 +1,1 @@
+function lip(){$(".lip li").length;$(".lip li").each(function(){($(this).index()+1)%2==0&&$(this).css("margin-right","0px")})}function market(){$("i.p-collect").click(function(){$(this).toggleClass("on")}),$("#market_title .market-li").click(function(){$(this).siblings("li").removeClass("on"),$(this).addClass("on")})}
