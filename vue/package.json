@@ -1,0 +1,15 @@
+{
+  "name": "myhome",
+  "version": "1.0.0",
+  "description": "\"\"myhone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John",
+  "license": "ISC",
+  "dependencies": {
+    "vue-cli": "^2.8.2",
+    "webpack": "^3.0.0"
+  }
+}

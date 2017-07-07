@@ -1,0 +1,94 @@
+@charset"utf-8";
+   // 颜色变量
+@headerBgColor:#212121;
+@searchColor:#575757;
+@viewRem:64;
+@onfontColor:#ff4646;
+@fontColor:#565656;
+@fontpastColor:#b1b1b1;
+@titleColor:#fff;
+// 各种自适应变量
+.fs(@px){
+	font-size: unit(@px / @viewRem, rem)
+}
+// 字体大小
+.re-width(@px){
+	width: unit(@px / @viewRem, rem)
+};
+.re-height(@px){
+	height: unit(@px / @viewRem, rem)
+};
+.l-height(@px){
+	line-height: unit(@px / @viewRem, rem)
+};
+
+.re-radius(@px)
+{
+	border-radius: unit(@px / @viewRem, rem)
+}
+.re-left-radius(@px)
+{
+	border-top-left-radius: unit(@px / @viewRem, rem);
+	border-bottom-left-radius: unit(@px / @viewRem, rem)
+}
+.mL(@px)
+{
+	margin-left: unit(@px / @viewRem, rem);
+}
+.mT(@px)
+{
+	margin-top: unit(@px / @viewRem, rem);
+}
+.mR(@px)
+{
+	margin-right: unit(@px / @viewRem, rem);
+}
+.mB(@px)
+{
+	margin-bottom: unit(@px / @viewRem, rem);
+}
+.pL(@px)
+{
+	padding-left: unit(@px / @viewRem, rem);
+}
+.pT(@px)
+{
+	padding-top: unit(@px / @viewRem, rem);
+}
+.pR(@px)
+{
+	padding-right: unit(@px / @viewRem, rem);
+}
+.pB(@px)
+{
+	padding-bottom: unit(@px / @viewRem, rem);
+}
+.top(@px)
+{
+	top: unit(@px / @viewRem, rem);
+}
+.left(@px)
+{
+	left: unit(@px / @viewRem, rem);
+}
+.right(@px)
+{
+	right: unit(@px / @viewRem, rem);
+}
+.bor-b(@px)
+{
+	border-bottom-width: unit(@px / @viewRem, rem);
+}
+.box-content
+{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+// 价格颜色与大小
+.priceFont
+{
+	color: @onfontColor;
+	.fs(25);
+}
