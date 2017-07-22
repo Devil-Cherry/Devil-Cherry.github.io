@@ -6,6 +6,7 @@ import router from './router'
 import resource from 'vue-resource'
 require('common/less/reset.less')
 require('common/less/main.less')
+// require('common/less/swiper-3.4.2.min.css')
 // require('common/less/variable.less')
 
 Vue.use(resource)

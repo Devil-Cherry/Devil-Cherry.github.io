@@ -34,6 +34,7 @@
 	],
 	"goods": [
 		{
+			"id":1,
 			"type":1,
 			"goodName":"不规则简约餐盘包邮",
 			"goodPrice":38,
@@ -41,6 +42,7 @@
 			"goodImg":"./static/image/product/p1_b.jpg"
 		},
 		{
+			"id":2,
 			"type":1,
 			"goodName":"创意简约时尚小夜灯",
 			"goodPrice":19,
@@ -48,6 +50,7 @@
 			"goodImg":"./static/image/product/p2_b.jpg"
 		},
 		{
+			"id":3,
 			"type":1,
 			"goodName":"无火精油淡雅香薰",
 			"goodPrice":48,
@@ -55,6 +58,7 @@
 			"goodImg":"./static/image/product/p3_b.jpg"
 		},
 		{
+			"id":4,
 			"type":1,
 			"goodName":"手工陶瓷马克龙色茶叶罐",
 			"goodPrice":15,
@@ -62,6 +66,7 @@
 			"goodImg":"./static/image/product/p4_b.jpg"
 		},
 		{
+			"id":1,
 			"type":2,
 			"goodName":"不规则简约餐盘包邮",
 			"goodPrice":38,
@@ -69,6 +74,7 @@
 			"goodImg":"./static/image/product/p1_b.jpg"
 		},
 		{
+			"id":2,
 			"type":2,
 			"goodName":"创意简约时尚小夜灯",
 			"goodPrice":19,
@@ -76,6 +82,7 @@
 			"goodImg":"./static/image/product/p2_b.jpg"
 		},
 		{
+			"id":3,
 			"type":2,
 			"goodName":"无火精油淡雅香薰",
 			"goodPrice":48,
@@ -83,6 +90,7 @@
 			"goodImg":"./static/image/product/p3_b.jpg"
 		},
 		{
+			"id":4,
 			"type":2,
 			"goodName":"手工陶瓷马克龙色茶叶罐",
 			"goodPrice":15,
@@ -90,6 +98,7 @@
 			"goodImg":"./static/image/product/p4_b.jpg"
 		},
 		{
+			"id":3,
 			"type":2,
 			"goodName":"无火精油淡雅香薰",
 			"goodPrice":48,

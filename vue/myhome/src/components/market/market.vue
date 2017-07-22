@@ -24,6 +24,9 @@ import searchBar from 'components/head/Search'
 	  components: {
 	  	'searchbar': searchBar,
 	  	'm-nav': Navbar
+	  },
+	   created: function() {
+	  	this.$parent.isfoot(true)
 	  }
 	}
 </script>
@@ -38,4 +41,5 @@ import searchBar from 'components/head/Search'
 	height: auto;
 	overflow: hidden;
 }
+
 </style>

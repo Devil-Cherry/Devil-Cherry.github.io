@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-  <transition>
-  	<router-view></router-view>
-  </transition>
+    <transition name="fade">
+    	<router-view></router-view>
+    </transition>
     
-    <vue-foot></vue-foot>
+    <vue-foot v-if='isFoot'></vue-foot>
   </div>
 </template>
 
@@ -12,12 +12,28 @@
 import Foot from 'components/Foot'
 
 export default {
+  data()
+  {
+    return {
+      isFoot:true
+    }
+  },
   components: {
     'vue-foot': Foot
+  },
+  created:function(){
+    this.isfoot(true)
+  },
+  methods:
+  {
+    isfoot:function(fool)
+    {
+      this.isFoot = fool
+    }
   }
 }
 document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px'
-
+  
 </script>
 
 <style lang='less'>
@@ -26,5 +42,12 @@ document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 
 {
   width: 100%;
   height: 100%;
+}
+.fade-enter-active, .fade-leave-active {
+  opacity: 1;
+  transition: opacity .3s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
 }
 </style>

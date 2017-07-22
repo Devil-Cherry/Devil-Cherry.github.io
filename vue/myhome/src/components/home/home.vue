@@ -32,7 +32,8 @@ import searchBar from 'components/head/Search'
 	  	}
 	  },
 	  created: function() {
-	  	this.subView()
+	  	this.subView(),
+	  	this.$parent.isfoot(true)
 	  },
 	  methods: {
 	   subView: function () {

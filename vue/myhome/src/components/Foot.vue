@@ -4,8 +4,8 @@
 			<ul>
 				<router-link to='/' exact><li class="nav-home nav-li"></li></router-link>
 				<router-link to='/market'><li class="nav-market nav-li"></li></router-link>
-				<a href="javascript:void(0)"><li class="nav-shopcar nav-li"></li></a>
-				<a href="javascript:void(0)"><li class="nav-user nav-li"></li></a>
+				<router-link to='/shopcar'><li class="nav-shopcar nav-li"></li></router-link>
+				<router-link to='/usercenter'><li class="nav-user nav-li"></li></router-link>
 			</ul>
 		</div>
     </footer>
@@ -43,6 +43,14 @@
 		& .nav-market
 		{
 			background-image: url(../assets/image/icon/@2x/market@2x_s.png)
+		}
+		& .nav-shopcar
+		{
+			background-image: url(../assets/image/icon/@2x/buy@2x_s.png)
+		}
+		& .nav-user
+		{
+			background-image: url(../assets/image/icon/@2x/user@2x_s.png)
 		}
 	}
 	.nav-home

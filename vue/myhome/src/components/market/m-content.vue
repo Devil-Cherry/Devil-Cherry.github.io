@@ -2,9 +2,7 @@
 	<div class="m-content">
 		<ul class="lip" v-if="show">
 			<li class="p-li" v-for="good in goodList">
-					<div class="p-img">
-						<img v-bind:src="good.goodImg" alt="产品图">
-					</div>
+					<router-link :to="{ name: 'good' , params:{proId:good.id}}" tag='div' class='p-img'><img v-bind:src="good.goodImg" alt="产品图"></router-link>
 					<div class="p-text">
 						<p class="p-title">{{good.goodName}}</p>
 						<div class="p-price">
