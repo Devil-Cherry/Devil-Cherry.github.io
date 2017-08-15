@@ -2,6 +2,9 @@
 	<div class="handle">
 		<span class="addcar fl">加入购物车</span>
 		<span class="buy fr">立即购买</span>
+		<div class="layer">
+			ksdnfjsdnfjs
+		</div>
 	</div>
 </template>
 
@@ -41,6 +44,14 @@ export default {
 			background-color: rgba(0,0,0,.8);
 		}
 	}
+
+}
+.layer
+{
+	position: absolute;
+	top: 0;
+	idth: 100%;
+	.re-height(740);
 
 }
 </style>

@@ -3,7 +3,7 @@
 		<div class="de-nav">
 			<ul>
 				<router-link tag='li' to='/goods/deimg' exact>图文详情</router-link>
-				<router-link tag='li' to='/goods/dekey'>产品参数</router-link>
+				<router-link tag='li' to='/goods/dekey' exact>产品参数</router-link>
 				<li>物流说明</li>
 			</ul>
 		</div>

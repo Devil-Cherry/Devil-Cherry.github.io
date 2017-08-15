@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import resource from 'vue-resource'
+import 'common/less/variable.less'
 require('common/less/reset.less')
 require('common/less/main.less')
 // require('common/less/swiper-3.4.2.min.css')

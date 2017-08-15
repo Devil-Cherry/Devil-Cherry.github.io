@@ -53,7 +53,7 @@ import searchBar from 'components/head/Search'
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang='less'>
+<style lang='less' scoped>
 @import '../../common/less/variable.less';
 .home-content
 {

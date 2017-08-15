@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="j_idt2">
+    <link type="text/css" rel="stylesheet" href="style/theme.css" />
+    <link type="text/css" rel="stylesheet" href="style/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="style/components.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-plugins.js">
+    </script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/components.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/watermark.css" />
+    <script type="text/javascript" src="js/watermark.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/clock.css" />
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script>
+    if (window.PrimeFaces) { PrimeFaces.settings.locale = 'en'; }
+    </script>
+    <!--[if lte IE 7]>
+        <script>
+            window.location.href = 'http://120.76.78.243:8080/exam/update_browser.jsp';
+        </script><![endif]-->
+    <title>
+        考试列表 - 呢吒教学系统
+    </title>
+    <meta http-equiv="keywords" content=" 呢吒教学系统" />
+    <meta http-equiv="description" content=" 呢吒教学系统" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="style/green.css" />
+    <link rel="stylesheet" type="text/css" href="style/rerebbs.css" />
+    <link rel="stylesheet" type="text/css" href="style/rerebbs_a.css" />
+    <script src="js/upScroll.js" type="text/javascript" language="javascript"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#s_222").Scroll({ line: 1, speed: 400, timer: 5000 });
+    });
+    </script>
+
+    <form id="myForm" name="myForm" method="post" action="/exam/talk/Default.jspx" enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="myForm" value="myForm" />
+            <div id="myForm:CasusPanel" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container">
+                <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top">
+                    <span id="myForm:CasusPanel_title" class="ui-dialog-title">
+                        系统公告
+                    </span>
+                    <a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"
+                    aria-label="Close">
+                        <span class="ui-icon ui-icon-closethick">
+                        </span>
+                    </a>
+                </div>
+                <div class="ui-dialog-content ui-widget-content">
+                    <div id="myForm:j_idt12" class="ui-outputpanel ui-widget">
+                        <div style="text-align: left!important;">
+                            <span style="font-weight: bold;">
+                                标题：
+                            </span>
+                            <span style="font-weight: bold;">
+                            </span>
+                            <hr id="myForm:j_idt16" class="ui-separator ui-state-default ui-corner-all"
+                            />
+                            发布日期：
+                            <span style="margin-left:15px;color:blue;line-height: 25px;">
+                            </span>
+                            <hr id="myForm:j_idt19" class="ui-separator ui-state-default ui-corner-all"
+                            />
+                            <div style="max-height: 300px;overflow-y: auto;">
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- <script id="myForm:CasusPanel_s" type="text/javascript">
+        $(function() { PrimeFaces.cw("Dialog", "CasusPanel", { id: "myForm:CasusPanel", width: "600", minHeight: 200 }); });
+        </script> -->
+        <div id="myForm:login1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="z-index: 1000;">
+            <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="myForm:login1_title" class="ui-dialog-title">登录</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"><span class="ui-icon ui-icon-closethick"></span></a></div>
+            <div class="ui-dialog-content ui-widget-content">
+                <div id="myForm:j_idt24" class="ui-outputpanel ui-widget">
+                    <script>
+                    function testLogin() {
+                        //alert('ok');
+                        if (true == false) {
+                            PF('login1').hide();
+
+                        }
+                        PF('loginButton').enable();
+
+                    }
+                    </script>
+                </div>
+                <table style="width:98%;margin: 5px 0px 15px 0px;height:130px;">
+                    <tbody>
+                        <tr>
+                            <td class="w21"><span class="myTip">标识类型：</span>
+                                <select name="myForm:j_idt29" size="1">
+                                    <option value="urn" selected="selected">用户名</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w21">
+                                <!-- <script id="myForm:j_idt31_s" type="text/javascript">
+                                $(function() { PrimeFaces.cw("Watermark", "widget_myForm_j_idt31", { id: "myForm:j_idt31", value: "考生标识", target: "myForm:urn" }); });
+                                </script> -->
+                                <input id="myForm:urn" name="myForm:urn" type="text" value="" autocomplete="off" onfocus="this.select()" style="width:260px;height:22px;" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" />
+                                <!-- <script id="myForm:urn_s" type="text/javascript">
+                                PrimeFaces.cw("InputText", "widget_myForm_urn", { id: "myForm:urn" });
+                                </script> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w21">
+                               <!--  <script id="myForm:j_idt32_s" type="text/javascript">
+                                $(function() { PrimeFaces.cw("Watermark", "widget_myForm_j_idt32", { id: "myForm:j_idt32", value: "密码", target: "myForm:pwd" }); });
+                                </script> -->
+                                <input id="myForm:pwd" name="myForm:pwd" type="password" class="ui-inputfield ui-password ui-widget ui-state-default ui-corner-all" style="width:260px;height:22px;" autocomplete="off" onfocus="this.select()" />
+                                <!-- <script id="myForm:pwd_s" type="text/javascript">
+                                $(function() { PrimeFaces.cw("Password", "widget_myForm_pwd", { id: "myForm:pwd" }); });
+                                </script> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w21">
+                                <table cellpadding="0" cellspacing="0" style="width:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <button id="myForm:j_idt34" name="myForm:j_idt34" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.bcn(this,event,[function(event){PF('loginButton').disable();},function(event){PrimeFaces.ab({s:&quot;myForm:j_idt34&quot;,p:&quot;myForm&quot;,u:&quot;myForm:mainPanel&quot;,onco:function(xhr,status,args){javascript:testLogin();;}});return false;}]);" style="width:80px;" type="submit"><span class="ui-button-text ui-c">登录</span></button>
+                                               <!--  <script id="myForm:j_idt34_s" type="text/javascript">
+                                                PrimeFaces.cw("CommandButton", "loginButton", { id: "myForm:j_idt34" });
+                                                </script> -->
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" name="myForm:j_idt36" />七天内自动登录</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr id="myForm:j_idt38" class="ui-separator ui-state-default ui-corner-all" />
+                <table class="generalInfo" style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>还没有帐号？</label>
+                                <a href="Register3.xhtml.htm"  class="operation">立即注册</a></td>
+                            <td><a href="GetPWD.xhtml.htm" class="operation">忘记密码？</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="myForm:j_idt47" class="ui-outputpanel ui-widget"></div>
+            </div>
+        </div>
+        <!-- <script id="myForm:login1_s" type="text/javascript">
+        $(function() { PrimeFaces.cw("Dialog", "login1", { id: "myForm:login1", resizable: false, width: "300", showEffect: "drop", hideEffect: "drop" }); });
+        </script> -->
+        <style type="text/css">
+        /* scrollDiv */
+
+        .scrollDiv {
+            height: 25px;
+            line-height: 25px;
+            border-left: gray 0px solid;
+            border-right: gray 0px solid;
+            overflow: hidden;
+            text-align: left;
+
+            margin: 0!important;
+            padding: 0;
+        }
+
+        .scrollDiv ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .scrollDiv li {
+            padding-left: 3px;
+            height: 25px;
+            border: 0px solid red;
+            list-style-type: none;
+            margin: 0!important;
+        }
+
+        .scrollWrapper {
+            width: 400px;
+            z-index: 500;
+            left: 0px;
+            top: 10px;
+            margin-left: 10px!important;
+            background: url(notice.png)/*tpa=http://120.76.78.243:8080/exam/resources/images/notice.png*/
+            no-repeat;
+        }
+
+        #s_222,
+        #s3 {
+            height: 25px;
+        }
+
+        .myTip {
+            font-weight: bold;
+        }
+
+        .ui-menubar,
+        .ui-menu {
+            background: #004e8e !important;
+        }
+        </style>
+        <div style="height: 75px;padding: 0px 0px 0px 0px;z-index: 1000;width:100%;position:fixed; top:0;background-color: white; ">
+            <div style="margin: 0 auto;width:970px;margin: 0px auto!important;background-color: white;border-radius: 3px;height: 75px;">
+                <div style="width:280px;border:0px solid green;height:75px;float: left;overflow: hidden;"><a href="index.html" target="_self"><img id="myForm:adv2" src="image/common/logo.png" style="width:100%;margin: 0px 0px 0px 0px;" /></a>
+                </div>
+                <div style="border:0px solid red;width:680px;float:right;">
+                        <div>
+                            <div id="myForm:j_idt53" class="ui-outputpanel ui-widget">
+                                <table style="text-align: right;width: 100%;border:0px solid green;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="topTip">
+                                                    欢迎光临本系统！
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div id="myForm:front_menu" class="ui-menu ui-menubar ui-widget ui-widget-content ui-corner-all ui-helper-clearfix front_menu"
+                                                style="border:0px solid red;width: 500px;height: 28px;background-color:white!important;text-align: right!important;"
+                                                role="menubar">
+                                                    <div tabindex="0" class="ui-helper-hidden-accessible">
+                                                    </div>
+                                                    <ul class="ui-menu-list ui-helper-reset">
+                                                        <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem">
+                                                            <a tabindex="-1" class="ui-menuitem-link ui-corner-all topNav" href="index.html"
+                                                            >
+                                                                <span class="ui-menuitem-text">
+                                                                    <i class="fa fa-home">
+                                                                    </i>
+                                                                    系统首页
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem">
+                                                            <a tabindex="-1" class="ui-menuitem-link ui-corner-all topNav" style=""
+                                                            href="#" onclick="PF('login1').show();;PrimeFaces.ab({s:&quot;myForm:j_idt192&quot;,g:false,f:&quot;myForm&quot;});return false;">
+                                                                <span class="ui-menuitem-text">
+                                                                    <i class="fa fa-cog">
+                                                                    </i>
+                                                                    登录
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem">
+                                                            <a tabindex="-1" class="ui-menuitem-link ui-corner-all topNav" href="Register3.jspx.htm"
+                                                            >
+                                                                <span class="ui-menuitem-text">
+                                                                    <i class="fa fa-newspaper-o tovNav">
+                                                                    </i>
+                                                                    注册
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem">
+                                                            <a tabindex="-1" class="ui-menuitem-link ui-corner-all topNav" href="SearchQuestion.jspx.htm"
+                                                            >
+                                                                <span class="ui-menuitem-text">
+                                                                    <i class="fa fa-search">
+                                                                    </i>
+                                                                    试题检索
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- <script id="myForm:front_menu_s" type="text/javascript">
+                                                    PrimeFaces.cw("Menubar", "widget_myForm_front_menu", {
+                                                        id: "myForm:front_menu",
+                                                        autoDisplay: true
+                                                    });
+                                                </script> -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- <script id="myForm:qrPanel_s" type="text/javascript">
+                                    $(function() {
+                                        PrimeFaces.cw("OverlayPanel", "widget_myForm_qrPanel", {
+                                            id: "myForm:qrPanel",
+                                            target: "myForm:mobile",
+                                            showEvent: "mouseover",
+                                            showEffect: "blind",
+                                            hideEffect: "explode"
+                                        });
+                                    });
+                                </script> -->
+                            </div>
+                        </div>
+                    <div style="clear:both;"></div>
+                    <div style="border:0px solid orange;width:100%;">
+                        <div style="border:0px solid red!important;float:right;width:250px;text-align: right;"><span id="myForm:j_idt98" class="ui-clock ui-widget ui-widget-header ui-corner-all"></span>
+                            <script id="myForm:j_idt98_s" type="text/javascript">
+                            PrimeFaces.cw("Clock", "widget_myForm_j_idt98", { id: "myForm:j_idt98", mode: "server", pattern: "系统时间：yyyy-MM-dd HH:mm:ss", locale: "en", value: 1499959196029 });
+                            </script>
+                        </div>
+                        <div class="scrollWrapper">
+                            <div style="float:left;padding-left: 38px;"><a href="CasusList.jspx.htm" title="查看全部公告" target="_blank"><span style="line-height:25px;color:#3260a2;">公告：</span></a>
+                            </div>
+                            <div id="s_222" class="scrollDiv" style="z-index: 500;left: 0px;top: 10px;padding-left:0px!important;margin-left: 35px;">
+                                <ul>
+                                    <li>
+                                        <a id="myForm:j_idt103:0:j_idt105" href="#" class="ui-commandlink ui-widget notice" onclick="PrimeFaces.ab({s:&quot;myForm:j_idt103:0:j_idt105&quot;,onco:function(xhr,status,args){PF('CasusPanel').show();}});return false;"><span style="">欢迎访问在线考试系统</span></a><span style="margin-left:15px;color:gray;line-height: 25px;">2014-06-01 02:20</span>
+                                    </li>
+                                    <li>
+                                        <a id="myForm:j_idt103:1:j_idt105" href="#" class="ui-commandlink ui-widget notice" onclick="PrimeFaces.ab({s:&quot;myForm:j_idt103:1:j_idt105&quot;,onco:function(xhr,status,args){PF('CasusPanel').show();}});return false;"><span style="">考生须知（测试数据）</span></a><span style="margin-left:15px;color:gray;line-height: 25px;">2015-04-30 23:43</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 80px;"></div>
+        <div style="margin: 0px auto;background-color: white;" class="ui-grid ui-grid-fixed">
+            <div id="myForm:mainPanel" class="ui-panel ui-widget ui-widget-content ui-corner-all mainPanel" style="border:0px solid #e5e5e5;width:100%;" data-widget="widget_myForm_mainPanel">
+                <div id="myForm:mainPanel_content" class="ui-panel-content ui-widget-content">
+                    <script type="text/javascript" language="javascript">
+                    function aabbcc(url) {
+                        var scrWidth = screen.availWidth;
+                        var scrHeight = screen.availHeight;
+                        var self = window.open(url, '', "fullscreen=3,resizable=false,toolbar=no,menubar=no,scrollbars=yes,location=no,top=0,left=0,width=" + scrWidth + ",height=" + scrHeight);
+                        //self.resizeTo(scrWidth,scrHeight);
+                        self.moveTo(0, 0);
+                    }
+                    </script>
+                    <div id="myForm:topNav8" class="ui-panel ui-widget ui-widget-content ui-corner-all frontColumn topNav8Wrapper" style="margin-bottom: 10px!important;" data-widget="widget_myForm_topNav8">
+                        <div id="myForm:topNav8_content" class="ui-panel-content ui-widget-content"><a href="Default.jspx.htm" class="nav8">首页</a><span class="navSeparator">/</span><span class="nav8">考试</span><span class="navSeparator">/</span><span class="nav8">综合考试</span></div>
+                    </div>
+                    <script id="myForm:topNav8_s" type="text/javascript">
+                    PrimeFaces.cw("Panel", "widget_myForm_topNav8", { id: "myForm:topNav8" });
+                    </script>
+                    <div id="myForm:j_idt118" class="ui-panel ui-widget ui-widget-content ui-corner-all frontColumn" data-widget="widget_myForm_j_idt118">
+                        <div id="myForm:j_idt118_content" class="ui-panel-content ui-widget-content">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><span style="font-weight: bold;">计算机类：</span></td>
+                                        <td>
+                                            <div id="myForm:j_idt119:0:j_idt122" class="ui-datagrid ui-widget noBorderGrid">
+                                                <div id="myForm:j_idt119:0:j_idt122_content" class="ui-datagrid-content ui-widget-content">
+                                                    <table class="ui-datagrid-data">
+                                                        <tbody>
+                                                            <tr class="ui-datagrid-row">
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=61b97315-edf5-4435-852f-06fc16a2ff8d.htm"><span style="margin:0px 10px 0px 10px;">数据挖掘</span></a></td>
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=2dae8b6a-145d-434d-94ac-83f3f9bb8afa.htm"><span style="margin:0px 10px 0px 10px;">机器学习</span></a></td>
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=81670411-271b-4757-83a9-b5019f98ee49.htm"><span style="margin:0px 10px 0px 10px;">汇编语言</span></a></td>
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=d96115aa-1c10-49cc-8f49-91ed37c405b9.htm"><span style="margin:0px 10px 0px 10px;">网页设计</span></a></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- <script id="myForm:j_idt119:0:j_idt122_s" type="text/javascript">
+                                            PrimeFaces.cw("DataGrid", "widget_myForm_j_idt119_0_j_idt122", { id: "myForm:j_idt119:0:j_idt122" });
+                                            </script> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><span style="font-weight: bold;">文学类：</span></td>
+                                        <td>
+                                            <div id="myForm:j_idt119:1:j_idt122" class="ui-datagrid ui-widget noBorderGrid">
+                                                <div id="myForm:j_idt119:1:j_idt122_content" class="ui-datagrid-content ui-widget-content">
+                                                    <table class="ui-datagrid-data">
+                                                        <tbody>
+                                                            <tr class="ui-datagrid-row">
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=1931687e-6e61-46af-a47e-36d50932432e.htm"><span style="margin:0px 10px 0px 10px;">古代诗词</span></a></td>
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=143ec8d9-8d70-49be-b7b3-b3bc6269aa01.htm"><span style="margin:0px 10px 0px 10px;">西方文学</span></a></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- <script id="myForm:j_idt119:1:j_idt122_s" type="text/javascript">
+                                            PrimeFaces.cw("DataGrid", "widget_myForm_j_idt119_1_j_idt122", { id: "myForm:j_idt119:1:j_idt122" });
+                                            </script> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><span style="font-weight: bold;">化学类：</span></td>
+                                        <td>
+                                            <div id="myForm:j_idt119:2:j_idt122" class="ui-datagrid ui-widget noBorderGrid">
+                                                <div id="myForm:j_idt119:2:j_idt122_content" class="ui-datagrid-content ui-widget-content">
+                                                    <table class="ui-datagrid-data">
+                                                        <tbody>
+                                                            <tr class="ui-datagrid-row">
+                                                                <td class="ui-datagrid-column"><a href="ExaminationList.jspx-lid=c2434ed8-df27-40e3-a0d6-e183501630d4.htm"><span style="margin:0px 10px 0px 10px;">化学实验</span></a></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                                <td class="ui-datagrid-column"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- <script id="myForm:j_idt119:2:j_idt122_s" type="text/javascript">
+                                            PrimeFaces.cw("DataGrid", "widget_myForm_j_idt119_2_j_idt122", { id: "myForm:j_idt119:2:j_idt122" });
+                                            </script> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <script id="myForm:j_idt118_s" type="text/javascript">
+                    PrimeFaces.cw("Panel", "widget_myForm_j_idt118", { id: "myForm:j_idt118" });
+                    </script> -->
+                    <div id="myForm:examDc" class="ui-datatable ui-widget frontColumn" style="width:100%">
+                        <div class="ui-datatable-tablewrapper">
+                            <table role="grid">
+                                <thead id="myForm:examDc_head">
+                                    <tr role="row">
+                                        <th id="myForm:examDc:columnRefType" class="ui-state-default ui-filter-column" role="columnheader" aria-label="考试" style="width:250px!important;text-align: left;"><span class="ui-column-title">考试</span>
+                                            <label id="myForm:examDc:columnRefType:filter_label" for="myForm:examDc:columnRefType:filter" class="ui-helper-hidden">Filter by 考试</label>
+                                            <input id="myForm:examDc:columnRefType:filter" name="myForm:examDc:columnRefType:filter" class="ui-column-filter ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" value="" autocomplete="off" aria-labelledby="myForm:examDc:columnRefType:filter_label" style="width:60%;display:inline;margin-left:10px;" />
+                                        </th>
+                                        <th id="myForm:examDc:j_idt131" class="ui-state-default" role="columnheader" aria-label="评分类型" style="text-align: center;"><span class="ui-column-title">评分类型</span></th>
+                                        <th id="myForm:examDc:j_idt135" class="ui-state-default" role="columnheader" aria-label="考试时长" style="width:80px!important;text-align: center;"><span class="ui-column-title">考试时长</span></th>
+                                        <th id="myForm:examDc:j_idt139" class="ui-state-default" role="columnheader" aria-label="积分" style="text-align: center;"><span class="ui-column-title">积分</span></th>
+                                        <th id="myForm:examDc:j_idt144" class="ui-state-default" role="columnheader" aria-label="题目" style="width:180px!important;text-align: center;"><span class="ui-column-title">题目</span></th>
+                                        <th id="myForm:examDc:j_idt162" class="ui-state-default" role="columnheader" aria-label="开始考试" style="text-align: center;width:100px;"><span class="ui-column-title">开始考试</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myForm:examDc_data" class="ui-datatable-data ui-widget-content">
+                                    <tr data-ri="0" class="ui-widget-content ui-datatable-even" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">中国快速考试
+                                            <br /><span class="tip">开放时间：2017-07-04 18:21</span>
+                                            <br /><span class="tip">结束时间：2017-08-03 18:21</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">120分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:0:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:0:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:0:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                            <!-- <script id="myForm:examDc:0:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_0_j_idt142", { id: "myForm:examDc:0:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:0:scorePaid" }); });
+                                            </script> -->
+                                            <div id="myForm:examDc:0:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <!-- <script id="myForm:examDc:0:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_0_j_idt143", { id: "myForm:examDc:0:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:0:fullScore" }); });
+                                            </script> -->
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">单选题：12</span></td>
+                                                        <td><span class="tip">多选题：10</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:0:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:0:j_idt165&quot;});return false;">请登录</a></td>
+                                    </tr>
+                                    <tr data-ri="1" class="ui-widget-content ui-datatable-odd" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">简单随机试卷测试
+                                            <br /><span class="tip">开放时间：2015-08-07 12:06</span>
+                                            <br /><span class="tip">结束时间：2025-08-29 12:32</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">120分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:1:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:1:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:1:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                           <!--  <script id="myForm:examDc:1:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_1_j_idt142", { id: "myForm:examDc:1:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:1:scorePaid" }); });
+                                            </script> -->
+                                            <div id="myForm:examDc:1:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <script id="myForm:examDc:1:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_1_j_idt143", { id: "myForm:examDc:1:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:1:fullScore" }); });
+                                            </script>
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">单选题：10</span></td>
+                                                        <td><span class="tip">填空题：10</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tip">判断题：10</span></td>
+                                                        <td><span class="tip">问答题：2</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tip">文件题：2</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:1:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:1:j_idt165&quot;});return false;">请登录</a>抽卷间隔不能少于1分钟
+                                            <br/>
+                                        </td>
+                                    </tr>
+                                    <tr data-ri="2" class="ui-widget-content ui-datatable-even" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">人工试卷测试
+                                            <br /><span class="tip">开放时间：2014-10-14 19:46</span>
+                                            <br /><span class="tip">结束时间：2027-03-31 00:14</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">20分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:2:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:2:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:2:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                            <script id="myForm:examDc:2:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_2_j_idt142", { id: "myForm:examDc:2:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:2:scorePaid" }); });
+                                            </script>
+                                            <div id="myForm:examDc:2:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <script id="myForm:examDc:2:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_2_j_idt143", { id: "myForm:examDc:2:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:2:fullScore" }); });
+                                            </script>
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">第一部分：26</span><span class="tip">，</span><span class="tip">第二部分：10</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:2:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:2:j_idt165&quot;});return false;">请登录</a></td>
+                                    </tr>
+                                    <tr data-ri="3" class="ui-widget-content ui-datatable-odd" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">随机试卷
+                                            <br /><span class="tip">开放时间：2015-03-21 16:39</span>
+                                            <br /><span class="tip">结束时间：2026-11-30 00:15</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">120分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:3:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:3:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:3:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                            <script id="myForm:examDc:3:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_3_j_idt142", { id: "myForm:examDc:3:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:3:scorePaid" }); });
+                                            </script>
+                                            <div id="myForm:examDc:3:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <script id="myForm:examDc:3:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_3_j_idt143", { id: "myForm:examDc:3:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:3:fullScore" }); });
+                                            </script>
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">第一部分：28</span><span class="tip">，</span><span class="tip">第二部分：20</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:3:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:3:j_idt165&quot;});return false;">请登录</a></td>
+                                    </tr>
+                                    <tr data-ri="4" class="ui-widget-content ui-datatable-even" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">付费考试
+                                            <br /><span class="tip">开放时间：2014-08-20 18:29</span>
+                                            <br /><span class="tip">结束时间：2024-08-23 17:01</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">120分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:4:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:4:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:4:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                            <script id="myForm:examDc:4:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_4_j_idt142", { id: "myForm:examDc:4:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:4:scorePaid" }); });
+                                            </script>
+                                            <div id="myForm:examDc:4:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <script id="myForm:examDc:4:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_4_j_idt143", { id: "myForm:examDc:4:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:4:fullScore" }); });
+                                            </script>
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">单选题：2</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:4:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:4:j_idt165&quot;});return false;">请登录</a></td>
+                                    </tr>
+                                    <tr data-ri="5" class="ui-widget-content ui-datatable-odd" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">500
+                                            <br /><span class="tip">开放时间：2014-09-22 16:23</span>
+                                            <br /><span class="tip">结束时间：2024-10-11 02:06</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">120分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:5:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:5:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:5:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                            <script id="myForm:examDc:5:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_5_j_idt142", { id: "myForm:examDc:5:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:5:scorePaid" }); });
+                                            </script>
+                                            <div id="myForm:examDc:5:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <script id="myForm:examDc:5:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_5_j_idt143", { id: "myForm:examDc:5:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:5:fullScore" }); });
+                                            </script>
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">单选题：8</span></td>
+                                                        <td><span class="tip">多选题：3</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tip">填空题：10</span></td>
+                                                        <td><span class="tip">判断题：10</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="tip">问答题：7</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:5:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:5:j_idt165&quot;});return false;">请登录</a></td>
+                                    </tr>
+                                    <tr data-ri="6" class="ui-widget-content ui-datatable-even" role="row">
+                                        <td role="gridcell" style="width:250px!important;text-align: left;">人工试卷2
+                                            <br /><span class="tip">开放时间：2015-11-09 16:14</span>
+                                            <br /><span class="tip">结束时间：2025-12-31 16:14</span></td>
+                                        <td role="gridcell" style="text-align: center;"><span class="tip">智能评分</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="width:80px!important;text-align: center;"><span class="tip">120分钟</span>
+                                            <br />
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;"><span id="myForm:examDc:6:scorePaid" class="tip">积分消耗：0</span>
+                                            <br /><span id="myForm:examDc:6:fullScore" class="tip">满分积分：0</span>
+                                            <div id="myForm:examDc:6:j_idt142" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">参加考试时消耗积分0</div>
+                                            </div>
+                                            <script id="myForm:examDc:6:j_idt142_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_6_j_idt142", { id: "myForm:examDc:6:j_idt142", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:6:scorePaid" }); });
+                                            </script>
+                                            <div id="myForm:examDc:6:j_idt143" class="ui-tooltip ui-widget ui-tooltip-right">
+                                                <div class="ui-tooltip-arrow"></div>
+                                                <div class="ui-tooltip-text ui-shadow ui-corner-all">0</div>
+                                            </div>
+                                            <script id="myForm:examDc:6:j_idt143_s" type="text/javascript">
+                                            $(function() { PrimeFaces.cw("Tooltip", "widget_myForm_examDc_6_j_idt143", { id: "myForm:examDc:6:j_idt143", showEffect: "fade", hideEffect: "fade", target: "myForm:examDc:6:fullScore" }); });
+                                            </script>
+                                        </td>
+                                        <td role="gridcell" style="width:180px!important;text-align: center;">
+                                            <table class="threadColumn special1 special2" cellpadding="0" cellspacing="0" style="text-align: center;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="tip">第一部分：8</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td role="gridcell" style="text-align: center;width:100px;"><a id="myForm:examDc:6:j_idt165" href="#" class="ui-commandlink ui-widget" onclick="PF('login1').show();PrimeFaces.ab({s:&quot;myForm:examDc:6:j_idt165&quot;});return false;">请登录</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="myForm:examDc_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page"><span class="ui-icon ui-icon-seek-first">p</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page"><span class="ui-icon ui-icon-seek-prev">p</span></a><span class="ui-paginator-pages"><a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all ui-state-disabled" aria-label="Next Page"><span class="ui-icon ui-icon-seek-next">p</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all ui-state-disabled" aria-label="Last Page"><span class="ui-icon ui-icon-seek-end">p</span></a></div>
+                    </div>
+                    <!-- <script id="myForm:examDc_s" type="text/javascript">
+                    $(function() { PrimeFaces.cw("DataTable", "widget_myForm_examDc", { id: "myForm:examDc", paginator: { id: ['myForm:examDc_paginator_bottom'], rows: 10, rowCount: 7, page: 0, currentPageTemplate: '({currentPage} of {totalPages})' }, filter: true }); });
+                    </script> -->
+                </div>
+            </div>
+            <!-- <script id="myForm:mainPanel_s" type="text/javascript">
+            PrimeFaces.cw("Panel", "widget_myForm_mainPanel", { id: "myForm:mainPanel" });
+            </script> -->
+            <div id="myForm:j_idt177" class="ui-panel ui-widget ui-widget-content ui-corner-all mainPanel" style="width:100%;border:0px solid #e5e5e5;margin: 0px auto;" data-widget="widget_myForm_j_idt177">
+                <div id="myForm:j_idt177_content" class="ui-panel-content ui-widget-content">
+                    <div id="yczfhflinks">
+                        <table align="center" style="text-align: center; width: 99%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center">Copyright ? 2011-2017 版权所有：广州远志资讯科技有限公司
+                                    <br />E-Mail：5883240@qq.com
+                                    <br /> 本系统建议在正式考试时使用
+                                    <a target="_blank" href="javascript:if(confirm(%27https://www.google.com/intl/zh-CN/chrome/browser/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.google.com/intl/zh-CN/chrome/browser/%27">Chrome</a>或<a target="_blank" href="javascript:if(confirm(%27http://www.firefox.com.cn/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.firefox.com.cn/%27">FireFox</a>等高性能浏览器！
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- <script id="myForm:j_idt177_s" type="text/javascript">
+            PrimeFaces.cw("Panel", "widget_myForm_j_idt177", { id: "myForm:j_idt177" });
+            </script> -->
+            <div id="myForm:ajaxStatusPanel" style="width:64px;height:64px;position:fixed;right:5px;bottom:5px;z-index: 100">
+                <div id="myForm:ajaxStatusPanel_start" style="display:none"><img id="myForm:j_idt183" src="loading.gif-pfdrid_c=true.gif" alt="" style="" /></div>
+                <div id="myForm:ajaxStatusPanel_complete" style="display:none"></div>
+            </div>
+           <!--  <script id="myForm:ajaxStatusPanel_s" type="text/javascript">
+            $(function() { PrimeFaces.cw("AjaxStatus", "ajaxStatusPanel", { id: "myForm:ajaxStatusPanel" }); });
+            </script> -->
+        </div>
+        <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="5937631609974831496:-6695945363262776474" autocomplete="off" />
+    </form>
+    <script type="text/javascript" src="js/jquery.Sonline.js"></script>
+    <script type="text/javascript">
+    // var open1=true;
+    // if (open1) {
+    //      $(function() {
+    //          $().Sonline({
+    //              Position: "left", //left或right
+    //              Top: 180, //顶部距离，默认200px
+    //              Width: 151, //顶部距离，默认200px
+    //              Style: 3, //图标的显示风格共6种风格，默认显示第一种：1
+    //              Effect: true, //滚动或者固定两种方式，布尔值：true或false
+    //              DefaultsOpen: false, //默认展开：true,默认收缩：false
+    //              Tel: "400 007 8605 ", //其它信息图片等
+    //              Qqlist: "754600590|QQ客服,192773394|QQ客服,2073219188|值班QQ", //多个QQ用','隔开，QQ和客服名用'|'隔开
+    //              Qunlist: "",
+    //              Wwlist: "lteb2002:m2|旺旺客服,lteb2002:m3|旺旺客服,lteb2002|意见建议"
+    //         });
+    //     });
+    //  }
+    </script>
+    <script type="text/javascript">
+    //蝙蝠在线考试系统，技术支持：成都无标度网络科技有限公司，网址：http://www.wbdwl.com。
+    </script>
+</body>
+
+</html>

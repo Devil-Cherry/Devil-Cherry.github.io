@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 @import '../../common/less/variable.less';
 .back
 {

@@ -20,7 +20,7 @@
 		}
 	}
 </script>
-<style scoped lang='less'>
+<style lang='less' scoped>
 @import '../../common/less/variable.less';
 .navbar
 {

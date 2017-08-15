@@ -36,8 +36,7 @@ document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 
   
 </script>
 
-<style lang='less'>
-@import 'common/less/variable.less';
+<style lang='less' scoped>
 #app
 {
   width: 100%;
