@@ -1,10 +1,7 @@
 <template>
 	<div class="handle">
-		<span class="addcar fl">加入购物车</span>
+		<span class="addcar fl" v-on:click='sendmsg'>加入购物车</span>
 		<span class="buy fr">立即购买</span>
-		<div class="layer">
-			ksdnfjsdnfjs
-		</div>
 	</div>
 </template>
 
@@ -17,6 +14,11 @@ export default {
     return {
     	h_height:100
     };
+  },
+  methods:{
+  	sendmsg:function(){
+  		this.$emit('listenclick',true)
+  	}
   }
 };
 </script>
@@ -46,12 +48,5 @@ export default {
 	}
 
 }
-.layer
-{
-	position: absolute;
-	top: 0;
-	idth: 100%;
-	.re-height(740);
 
-}
 </style>
